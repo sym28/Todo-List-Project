@@ -12,10 +12,10 @@ $('ul').on('click','span',function(event){
 });
 
 $('input[type="text"]').keypress(function(event){
-    if (event.which === 13) {
+    if (event.which === 13) {   //enter-key press
        var newTodo = $(this).val()
        $(this).val('');
-       $('ul').append('<li><span>X</span> ' + newTodo + '</li>') 
+       $('ul').append('<li><span><i class="fas fa-trash"></i></span> ' + newTodo + '</li>') 
        
     }
 }) 
